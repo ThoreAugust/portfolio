@@ -6,11 +6,6 @@ jobs:
     build:
       runs-on: ubuntu-18.04
       steps:
-        - run: echo $CONTENTFUL_SPACE_ID $CONTENTFUL_ACCESS_TOKEN
-          env:
-            CONTENTFUL_SPACE_ID: Hello
-            CONTENTFUL_ACCESS_TOKEN: World
-        
         - uses: actions/checkout@master
 
         - uses: actions/setup-node@master
@@ -19,3 +14,6 @@ jobs:
         
         - run: npm ci
         - run: npm run build
+          with:
+            spaceId: ${{secrets.CONTENTFUL_SPACE_ID}}
+            accessToken: ${{secrets.CONTENTFUL_ACCESS_TOKEN}}
