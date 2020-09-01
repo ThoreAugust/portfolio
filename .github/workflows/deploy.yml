@@ -6,9 +6,10 @@ jobs:
     build:
       runs-on: ubuntu-18.04
       steps:
-        - env:
-            CONTENTFUL_SPACE_ID: ${{secrets.CONTENTFUL_SPACE_ID}}
-            CONTENTFUL_ACCESS_TOKEN: ${{secrets.CONTENTFUL_ACCESS_TOKEN}}
+        - run: echo $CONTENTFUL_SPACE_ID $CONTENTFUL_ACCESS_TOKEN
+          env:
+            CONTENTFUL_SPACE_ID: Hello
+            CONTENTFUL_ACCESS_TOKEN: World
         
         - uses: actions/checkout@master
 
