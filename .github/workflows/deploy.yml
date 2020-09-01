@@ -19,6 +19,7 @@ jobs:
             CONTENTFUL_ACCESS_TOKEN: ${{secrets.CONTENTFUL_ACCESS_TOKEN}}
 
         - uses: actions/upload-artifact@master
+          if: failure()
           with:
             name: error
-            path: /home/runner/.npm/_logs/2020-09-01T16_01_26_908Z-debug.log
+            path: /home/runner/.npm/_logs/
