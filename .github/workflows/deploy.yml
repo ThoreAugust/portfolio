@@ -14,6 +14,6 @@ jobs:
         
         - run: npm ci
         - run: npm run build
-          with:
+          env:
             spaceId: ${{secrets.CONTENTFUL_SPACE_ID}}
             accessToken: ${{secrets.CONTENTFUL_ACCESS_TOKEN}}
