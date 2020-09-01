@@ -1,13 +1,15 @@
-name: Deployment
-on: push
-name: Build Gatsby Site
+name: Deploy to Host
+
+on:
+  push:
+    branches: [master]
+
 jobs:
   build:
     name: Build Gatsby Site
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Build Gatsby Site
-      uses: jzweifel/gatsby-cli-github-action@master
-      with:
-        gatsby-arg: build
+      - uses: actions/checkout@master
+      - uses: jzweifel/gatsby-cli-github-action@master
+           with:gatsby-arg:build
+
