@@ -11,5 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: jzweifel/gatsby-cli-github-action@master
-           with:gatsby-arg:build
 
