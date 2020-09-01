@@ -6,16 +6,6 @@ jobs:
     build:
       runs-on: ubuntu-18.04
       steps:
-        - name: Set Environment
-        - shell: bash
-          run: export CONTENTFUL_SPACE_ID={{secrets.CONTENTFUL_SPACE_ID}}
-        - shell: bash
-          run: echo $CONTENTFUL_SPACE_ID
-        - shell: bash
-          run: export CONTENTFUL_ACCESS_TOKEN={{secrets.CONTENTFUL_ACCESS_TOKEN}}
-        - shell: bash
-          run: echo $CONTENTFUL_ACCESS_TOKEN
-
         - name: Checkout master
         - uses: actions/checkout@master
 
@@ -26,3 +16,6 @@ jobs:
         
         - run: npm ci
         - run: npm run build
+          env:
+            CONTENTFUL_SPACE_ID: ${{secrets.CONTENTFUL_SPACE_ID}}
+            CONTENTFUL_ACCESS_TOKEN: ${{secrets.CONTENTFUL_ACCESS_TOKEN}}
