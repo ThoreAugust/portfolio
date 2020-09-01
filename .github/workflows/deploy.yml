@@ -8,11 +8,13 @@ jobs:
       steps:
         - name: Set Environment
         - shell: bash
-          run: |
-            export CONTENTFUL_SPACE_ID={{secrets.CONTENTFUL_SPACE_ID}} |
-            echo $CONTENTFUL_SPACE_ID |
-            export CONTENTFUL_ACCESS_TOKEN={{secrets.CONTENTFUL_ACCESS_TOKEN}} |
-            echo $CONTENTFUL_ACCESS_TOKEN |
+          run: export CONTENTFUL_SPACE_ID={{secrets.CONTENTFUL_SPACE_ID}}
+        - shell: bash
+          run: echo $CONTENTFUL_SPACE_ID
+        - shell: bash
+          run: export CONTENTFUL_ACCESS_TOKEN={{secrets.CONTENTFUL_ACCESS_TOKEN}}
+        - shell: bash
+          run: echo $CONTENTFUL_ACCESS_TOKEN
 
         - name: Checkout master
         - uses: actions/checkout@master
