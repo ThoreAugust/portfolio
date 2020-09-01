@@ -1,8 +1,8 @@
-- on:
+on:
     push:
-      branches:[master]
+      branches: [master]
       
-- jobs:
+jobs:
     build:
       runs-on: ubuntu-18.04
       steps:
