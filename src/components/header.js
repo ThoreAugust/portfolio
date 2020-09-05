@@ -1,12 +1,13 @@
 import React from 'react';
 import {Link, graphql, useStaticQuery} from 'gatsby'
 import headerStyles from './header.module.scss'
+import logo from '../../static/logo.png'
 
 const Header = () =>{
     const data = useStaticQuery(graphql`
         query{
             site{
-                siteMetadata{
+               siteMetadata{
                     title
                 }
             }
@@ -14,11 +15,10 @@ const Header = () =>{
     `)
     return(
         <header className={headerStyles.header}>
-            <h1>
-                <Link to='/' className={headerStyles.title}>
-                    {data.site.siteMetadata.title}
+            <div className={headerStyles.headerWrapper}>
+                <Link to='/'>
+                    <img src={logo} alt={data.site.siteMetadata.title} />
                 </Link>
-            </h1>
             <nav>
                 <ul className={headerStyles.navList}>
                     <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home</Link></li>
@@ -27,6 +27,7 @@ const Header = () =>{
                     <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact">Contact</Link></li>
                 </ul>
             </nav>
+            </div>
         </header>
     )
 }
