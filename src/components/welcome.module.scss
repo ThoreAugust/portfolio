@@ -12,5 +12,36 @@ $light: rgb(9,193,222);
         height: 100%;
         width: 50%;
         padding-bottom: 0;
+        &.leftImg{
+            justify-content: space-around;
+        }
+        img{
+            align-self: end;
+            height: 665px;
+            width: 422px;
+        }
+        &.message{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                margin-top: -100px;
+                font-size: 65pt;
+                font-weight: bold;
+                color: white;
+                border-top: white 2px solid;
+                border-bottom: white 2px solid;
+                letter-spacing: 10px;
+                text-transform: uppercase;
+            }
+            p{
+                margin-top: 20px;
+                text-align: center;
+                color: white;
+                font-size: 25pt;
+                font-weight: normal;
+            }
+        }
     }
+    
 }
