@@ -7,6 +7,11 @@
         font-size: 40pt;
         font-weight: 500;
     }
+
+    h3{
+        font-size: 28pt;
+        font-weight: 500;
+    }
     p{
         font-size: 16pt;
         font-weight: normal;
@@ -18,15 +23,29 @@
         justify-content: space-around;
         margin-left: 6%;
         width:75%;
-        height: 100vh;
+        padding: 0 0 5%;
 
         .project{
             width: 410px;
-            height: 570px;
+            height: fit-content;
+            min-height: 570px;
             background-color: #ededed;
             margin-top: 50px;
             border-radius: 10px;
             box-shadow: inset 0px 3px 7px 3px rgba(0,0,0,0.35), 0px 3px 7px 3px rgba(0,0,0,0.35);
+            padding: 10px 0 10px 25px;
+            text-align: center;
+            img{
+                height: 99%;
+            }
+            .disclaimer{
+                font-size: 8pt;
+                padding-right: 5%;
+            }
+            .moreInfo{
+                font-size: 12pt;
+                text-decoration: underline dotted;
+            }
         }
     }
 }

@@ -19,10 +19,10 @@ const Footer = () => {
     return(
         <footer className={footerStyles.footer}>
             <div className={footerStyles.socialWrapper}>
-              <a href="/"><FontAwesomeIcon icon={faTwitter} size="1x" aria-label="twitter" /></a>
-              <a href="/"><FontAwesomeIcon icon={faLinkedin} size="1x" aria-label="linkedin" /></a>
-              <a href="/"><FontAwesomeIcon icon={faTwitch} size="1x" aria-label="twitch" /></a>
-              <a href="/"><FontAwesomeIcon icon={faGithub} size="1x" aria-label="github" /></a>
+              <a href="https://twitter.com/thore_a"><FontAwesomeIcon icon={faTwitter} size="1x" aria-label="twitter" /></a>
+              <a href="https://www.linkedin.com/in/thoreaugust/"><FontAwesomeIcon icon={faLinkedin} size="1x" aria-label="linkedin" /></a>
+              <a href="https://www.twitch.tv/thoreaugust"><FontAwesomeIcon icon={faTwitch} size="1x" aria-label="twitch" /></a>
+              <a href="https://github.com/ThoreAugust"><FontAwesomeIcon icon={faGithub} size="1x" aria-label="github" /></a>
             </div>
             <p>Created by {data.site.siteMetadata.author}, copyright {data.site.siteMetadata.published}</p>
         </footer>
