@@ -1,5 +1,32 @@
 .container{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
+    min-height: 100vh;
+    width: 70vw;
+    margin: auto;
+    h1{
+        font-size: 40pt;
+        font-weight: 500;
+    }
+    h2{
+        font-size: 20pt;
+        font-weight: 500;
+        padding: .8rem 0;
+    }
+    h3{
+        font-size: 18pt;
+        font-weight: 500;
+        padding: .5rem 0;
+    }
+    p{
+        padding: 0 0 .5rem;
+        &.src{
+            font-size: 8pt;
+            font-style: italic;
+            font-weight: 300;
+            color: #777777;
+            a{
+                color: #777777;
+                text-decoration: none;
+            }
+        }
+    }
 }
