@@ -11,7 +11,7 @@ const ContactForm = () =>{
                     <input type="email" placeholder="E-Mail*" name="email" />
                     <input type="text" placeholder="Subject*" name="subject" />
                     <textarea placeholder="Message*" name="message" />
-
+                    <input type="hidden" name="form-name" value="contact" />
                     <button type="submit">Get in touch!</button>
                 </form>
             </div>
