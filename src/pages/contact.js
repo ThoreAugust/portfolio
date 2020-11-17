@@ -1,14 +1,14 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Head from '../components/head'
+import Imprint from '../components/imprint'
+import ContactForm from '../components/contactForm'
 const Contact = ()=>{
     return (
         <Layout>
             <Head title="Contact" />
-            <h1>Contact</h1>
-            <p>You can contact me via <br/>email: <a href="mailto:thore.august@gmx.de">thore.august@gmx.de</a><br/>  
-            <a href="https://www.linkedin.com/in/thoreaugust/" target="_blank" rel="noreferrer">LinkedIn</a> <br/> 
-            Twitter <a href="https://twitter.com/thore_a" target="_blank" rel="noreferrer">@thore_a</a> </p>
+            <Imprint />
+            <ContactForm />
         </Layout>
     )
 }

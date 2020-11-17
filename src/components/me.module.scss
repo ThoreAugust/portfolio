@@ -1,0 +1,40 @@
+
+$light: #f8f8f8;
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background:$light;
+    display: flex;
+    div{
+        display:flex;
+        height: 100%;
+        width: 50%;
+        padding-bottom: 0;
+        &.leftImg{
+            justify-content: space-around;
+        }
+        img{
+            align-self: flex-end;
+            height: 665px;
+            width: 422px;
+        }
+        &.message{
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            h1{
+                font-size: 18pt;
+                font-weight: bold;
+                color: black;
+            }
+            p{
+                margin-top: 20px;
+                color: black;
+                font-size: 16pt;
+                font-weight: normal;
+            }
+        }
+    }
+    
+}
