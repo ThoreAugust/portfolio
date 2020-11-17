@@ -11,7 +11,7 @@ const Imprint = () =>{
             22179 Hamburg</p>
             <h2>Kontakt</h2>
             <p>Telefon: 01725939757<br />
-            E-Mail: thore.august@gmx.de</p>
+            E-Mail: <a href="mailto:thore.august@gmx.de">thore.august@gmx.de</a></p>
             <h2>Redaktionell Verantwortlicher</h2>
             <p>Thore August</p>
             <h2>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>

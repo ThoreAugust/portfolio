@@ -7,4 +7,59 @@ $light: rgb(9,193,222);
     background:$light;
     background: linear-gradient(45deg, $light 0%, $dark 88%);
     display: flex;
+    div{
+        display:flex;
+        height: 100%;
+        width: 50%;
+        padding-bottom: 0;
+        form{
+            height: 75%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+            background-color: rgba(9,193,222,0.25);
+            p{
+                align-self: flex-start;
+                text-transform: uppercase;
+                color: white;
+                font-size: 2rem;
+                margin: 5% 8% 0;
+            }
+            input{
+                color: white;
+                height: 3rem;
+                width: 80%;
+                padding: 0 .5rem;
+                background: none;
+                border: $light solid;
+            }
+            textarea{
+                width: 80%;
+                color: white;
+                height: 15rem;
+                padding: .5rem;
+                background: none;
+                border: $light solid;
+                resize: none;
+            }
+            button{
+                height: 3rem;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 500;
+                padding: 1rem;
+                background-color: #ff2b4a;
+                border: none;
+                align-self: flex-end;
+                margin-right: 8%;
+            }
+        }
+        &.recaptcha{
+            height: fit-content;
+            width: fit-content;
+        }
+    }
 }
