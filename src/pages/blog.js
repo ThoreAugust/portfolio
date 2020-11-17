@@ -13,6 +13,7 @@ const Blog = () =>{
               title
               slug
               publishedDate(formatString: "DD.MM.YYYY")
+              abstract
             }
           }
         }
@@ -21,23 +22,25 @@ const Blog = () =>{
     return(
         <Layout>
             <Head title="Blog" />
-            <h1>Blog</h1>
-            <p>Post will show up here later on.</p>
-            <ol className={blogStyles.posts}>
-                {data.allContentfulBlogPost.edges.map((edge)=> {
-
-                    return(
-                        <li className={blogStyles.post}>
-                            <Link to={`/blog/${edge.node.slug}`}>
-                                <h2>{edge.node.title}</h2>
-                                <p>{edge.node.publishedDate}</p>
-                            </Link>
-                        </li>
-                    )
+            <div className={blogStyles.container}>
+                <h1>My Latest Blog Posts</h1>
+                <p>Post will show up here later on.</p>
+                <ol className={blogStyles.posts}>
+                    {data.allContentfulBlogPost.edges.map((edge)=> {
+                        return(
+                            <li className={blogStyles.post}>
+                                <Link to={`/blog/${edge.node.slug}`}>
+                                    <h2>{edge.node.title}</h2>
+                                    <p>{edge.node.abstract}</p>
+                                    <p className={blogStyles.publishedDate}>{edge.node.publishedDate}</p>
+                                </Link>
+                            </li>
+                        )
                     }
                     )
                 }
-            </ol>
+                </ol>
+            </div>
         </Layout>
     )
 }

@@ -1,0 +1,24 @@
+.container{
+    width: 70vw;
+    margin: 0 auto;
+    text-align: justify;
+    text-justify: inter-word;
+    h1{
+        font-size: 4rem;
+    }
+    h2,h3{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    p{
+        font-size: 1.25rem;
+        margin: 0 0 .5rem;
+        width: 90%;
+    }
+    .publishedDate{
+        font-size: 0.8rem;
+        font-style: italic;
+        color: #777777;
+        margin-bottom: 2rem;
+    }
+}
