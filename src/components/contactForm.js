@@ -12,7 +12,7 @@ const ContactForm = () =>{
                     <input type="text" placeholder="Subject*" name="subject" />
                     <textarea placeholder="Message*" name="message" />
                     <input type="hidden" name="form-name" value="contact" />
-                    <div data-netlify-recaptcha="true"></div>
+                    <div className={contactFormStyle.recaptcha} data-netlify-recaptcha="true"></div>
                     <button type="submit">Get in touch!</button>
                 </form>
             </div>
