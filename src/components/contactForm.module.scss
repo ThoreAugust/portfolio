@@ -57,9 +57,8 @@ $light: rgb(9,193,222);
                 margin-right: 8%;
             }
         }
-        &.recaptcha{
-            height: fit-content;
-            width: fit-content;
+        &.bot{
+            display: none;
         }
     }
 }

@@ -5,14 +5,14 @@ const ContactForm = () =>{
     return(
         <div className={contactFormStyle.container}>
             <div className={contactFormStyle.formLeft}>
-                <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                     <p>Leave a message</p>
                     <input type="text" placeholder="Name*" name="name" />
                     <input type="email" placeholder="E-Mail*" name="email" />
                     <input type="text" placeholder="Subject*" name="subject" />
                     <textarea placeholder="Message*" name="message" />
+                    <input name="bot-field" className={contactFormStyle.bot} />
                     <input type="hidden" name="form-name" value="contact" />
-                    <div className={contactFormStyle.recaptcha} data-netlify-recaptcha="true"></div>
                     <button type="submit">Get in touch!</button>
                 </form>
             </div>
