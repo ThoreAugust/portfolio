@@ -24,7 +24,6 @@ const Blog = () =>{
             <Head title="Blog" />
             <div className={blogStyles.container}>
                 <h1>My Latest Blog Posts</h1>
-                <p>Post will show up here later on.</p>
                 <ol className={blogStyles.posts}>
                     {data.allContentfulBlogPost.edges.map((edge)=> {
                         return(

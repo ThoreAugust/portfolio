@@ -16,8 +16,8 @@ $light: #f8f8f8;
         }
         img{
             align-self: flex-end;
-            height: 665px;
-            width: 422px;
+            height: 700px;
+            width: auto;
         }
         &.message{
             flex-direction: column;
@@ -37,6 +37,7 @@ $light: #f8f8f8;
             a{ 
                 height: 1.5rem;
                 text-transform: uppercase;
+                text-decoration: none;
                 color: white;
                 font-weight: 500;
                 padding: 1rem;
