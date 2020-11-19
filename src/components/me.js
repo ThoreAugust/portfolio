@@ -13,6 +13,7 @@ const Me = () =>{
                 <p>
                     Hier kommt noch Text hin.
                 </p>
+                <a href="/contact#contactForm">Get in touch!</a>
             </div>
         </div>
     )

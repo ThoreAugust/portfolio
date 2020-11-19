@@ -9,9 +9,9 @@ $light: rgb(9,193,222);
     display: flex;
     div{
         display:flex;
+        flex-direction: column;
         height: 100%;
         width: 50%;
-        padding-bottom: 0;
         form{
             height: 75%;
             width: 80%;
@@ -56,9 +56,35 @@ $light: rgb(9,193,222);
                 align-self: flex-end;
                 margin-right: 8%;
             }
+            .bot{
+                display: none;
+            }
         }
-        .bot{
-            display: none;
+        &.detailsRight{
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        div{
+            width: 75%;
+            height: auto;
+            padding: 2.5rem 0 3rem 3rem;
+            background-color: rgba(9,193,222,0.25);
+            color: white;
+            h3{
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin-bottom: .8rem;
+            }
+            p{
+                span{
+                    font-style: italic;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
         }
     }
 }
