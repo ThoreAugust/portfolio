@@ -9,7 +9,7 @@ const Me = () =>{
                 <img src={me} alt="This is me" />
             </div>
             <div className={aboutStyle.message}>
-                <h1>Hi, I am Thore August, Developer from Germany.</h1>
+                <h1>Hi, I am Thore August,<br/> Developer from Germany.</h1>
                 <p>
                     Hier kommt noch Text hin.
                 </p>

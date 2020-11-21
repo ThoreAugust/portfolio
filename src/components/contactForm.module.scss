@@ -4,22 +4,23 @@ $light: rgb(9,193,222);
 .container{
     height: 100vh;
     width: 100vw;
-    background:$light;
+    background: $light;
     background: linear-gradient(45deg, $light 0%, $dark 88%);
     display: flex;
+    padding: 0 7.5rem;
     div{
         display:flex;
         flex-direction: column;
         height: 100%;
-        width: 50%;
+        width: 55%;
         form{
             height: 75%;
-            width: 80%;
+            width: 82%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            margin: auto;
+            margin: auto 1.5rem;
             background-color: rgba(9,193,222,0.25);
             p{
                 align-self: flex-start;
@@ -63,18 +64,18 @@ $light: rgb(9,193,222);
         &.detailsRight{
             align-items: center;
             justify-content: space-evenly;
+            padding-right: 12rem;
+            width: 33.7%;
         }
         div{
             width: 75%;
             height: auto;
-            padding: 2.5rem 0 3rem 3rem;
+            padding: 1.5rem 0 3rem 2rem;
             background-color: rgba(9,193,222,0.25);
             color: white;
             h3{
                 text-transform: uppercase;
-                font-size: 1.5rem;
-                font-weight: 500;
-                margin-bottom: .8rem;
+
             }
             p{
                 span{
