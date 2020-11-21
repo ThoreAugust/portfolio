@@ -1,5 +1,6 @@
-$dark: rgba(22,38,75,1);
-$light: rgb(9,193,222);
+$dark: #16264b;
+$light: #09c1de;
+$hover-blue: #09c1de;
 
 .container{
     height: 100vh;
@@ -31,6 +32,7 @@ $light: rgb(9,193,222);
             }
             input{
                 color: white;
+                font-size: 12pt;
                 height: 3rem;
                 width: 80%;
                 padding: 0 .5rem;
@@ -39,6 +41,7 @@ $light: rgb(9,193,222);
             }
             textarea{
                 width: 80%;
+                font-size: 12pt;
                 color: white;
                 height: 15rem;
                 padding: .5rem;
@@ -84,6 +87,9 @@ $light: rgb(9,193,222);
                 a{
                     color: white;
                     text-decoration: none;
+                }
+                a:hover{
+                    color: $hover-blue;
                 }
             }
         }

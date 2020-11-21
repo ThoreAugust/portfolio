@@ -1,6 +1,6 @@
 $bgColor: #222222;
 $textColor: #aaaaaa;
-$active: #09c1de;
+$hover-blue: #09c1de;
 
 .footer{
     min-height: 5rem;
@@ -23,6 +23,6 @@ $active: #09c1de;
         margin-right: .8rem;
     }
     a:hover{
-        color: $active;
+        color: $hover-blue;
     }
 }

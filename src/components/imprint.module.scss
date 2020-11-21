@@ -1,22 +1,29 @@
+$hover-blue: #09c1de;
+$link-grey-dark:#3d3d3d;
+$light-grey: #777777;
+
 .container{
     min-height: 100vh;
     width: 70vw;
     margin: auto;
     p{
         a{
-            color: #3d3d3d;
+            color: $link-grey-dark;
             text-decoration: none;
         }
         &.src{
             font-size: 8pt;
             font-style: italic;
             font-weight: 300;
-            color: #777777;
+            color: $light-grey;
             padding: .5rem 0 6rem;
             a{
-                color: #777777;
+                color: $light-grey;
                 text-decoration: none;
             }
+        }
+        a:hover{
+            color: $hover-blue;
         }
     }
 }
