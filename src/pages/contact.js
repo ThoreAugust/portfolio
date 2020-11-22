@@ -5,7 +5,7 @@ import Imprint from '../components/imprint'
 import ContactForm from '../components/contactForm'
 const Contact = ()=>{
     return (
-        <Layout>
+        <Layout bgColor="#346E6E">
             <Head title="Contact" />
             <Imprint />
             <ContactForm />

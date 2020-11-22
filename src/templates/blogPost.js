@@ -28,7 +28,7 @@ const BlogComponent = (props) =>{
     }
   }
     return(
-        <Layout>
+        <Layout bgColor="#346E6E">
             <Head title={props.data.contentfulBlogPost.title} />
             <div className={postStyles.container}>
 

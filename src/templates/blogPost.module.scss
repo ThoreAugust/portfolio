@@ -1,12 +1,14 @@
+$sec-hover: #09c1de;
 .container{
     width: 70vw;
     margin: 0 auto;
     text-align: justify;
     text-justify: inter-word;
+    color: white;;
     .publishedDate{
         font-size: 0.8rem;
         font-style: italic;
-        color: #777777;
+        color: $sec-hover;
         margin-bottom: 2rem;
     }
 }

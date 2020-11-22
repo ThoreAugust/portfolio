@@ -6,7 +6,7 @@ import Recent from '../components/recent';
 
 const Home = () =>{
   return(
-    <Layout isIndex={true}>
+    <Layout isIndex={true} bgColor="#0E4343">
       <Head title="Home" />
       <Welcome />
       <Recent />

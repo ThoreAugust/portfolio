@@ -1,12 +1,15 @@
-$dark: #16264b;
-$light: #09c1de;
-$hover-blue: #09c1de;
+$prime: #16264b;
+$secondary: #0e87a7;
+$sec-hover: #09c1de;
+$third-bright: #346E6E;
+$third: #0E4343;
+$transparent-blue: rgba(9,193,222,0.25);
 
 .container{
     height: 100vh;
     width: 100vw;
-    background: $light;
-    background: linear-gradient(45deg, $light 0%, $dark 88%);
+    background: $secondary;
+    background: linear-gradient(45deg, $secondary 0%, $prime 88%);
     display: flex;
     padding: 0 7.5rem;
     div{
@@ -22,7 +25,8 @@ $hover-blue: #09c1de;
             justify-content: space-around;
             align-items: center;
             margin: auto 1.5rem;
-            background-color: rgba(9,193,222,0.25);
+            background-color: $transparent-blue;
+            padding: .75rem 0;
             p{
                 align-self: flex-start;
                 text-transform: uppercase;
@@ -37,7 +41,7 @@ $hover-blue: #09c1de;
                 width: 80%;
                 padding: 0 .5rem;
                 background: none;
-                border: $light solid;
+                border: $secondary solid;
             }
             textarea{
                 width: 80%;
@@ -46,7 +50,7 @@ $hover-blue: #09c1de;
                 height: 15rem;
                 padding: .5rem;
                 background: none;
-                border: $light solid;
+                border: $secondary solid;
                 resize: none;
             }
             button{
@@ -74,7 +78,7 @@ $hover-blue: #09c1de;
             width: 75%;
             height: auto;
             padding: 1.5rem 0 3rem 2rem;
-            background-color: rgba(9,193,222,0.25);
+            background-color: $transparent-blue;
             color: white;
             h3{
                 text-transform: uppercase;
@@ -89,7 +93,7 @@ $hover-blue: #09c1de;
                     text-decoration: none;
                 }
                 a:hover{
-                    color: $hover-blue;
+                    color: $sec-hover;
                 }
             }
         }

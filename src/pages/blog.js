@@ -20,7 +20,7 @@ const Blog = () =>{
       }
     `)
     return(
-        <Layout>
+        <Layout bgColor="#0E4343">
             <Head title="Blog" />
             <div className={blogStyles.container}>
                 <h1>My Latest Blog Posts</h1>

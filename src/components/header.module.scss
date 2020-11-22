@@ -1,11 +1,11 @@
-$grad-dark: #16264b;
-$grad-light: #0e87a7;
-$hover-blue: #09c1de;
+$prime: #16264b;
+$secondary: #0e87a7;
+$sec-hover: #09c1de;
 
 .header{
     padding: 0 7.5vw 0 7.5vw;
-    background:$grad-light;
-    background: linear-gradient(45deg, $grad-light 0%, $grad-dark 77%);
+    background:$secondary;
+    background: linear-gradient(45deg, $secondary 0%, $prime 77%);
     position: fixed;
     width: 100vw;
 }
@@ -38,5 +38,5 @@ $hover-blue: #09c1de;
 }
 
 .nav-item:hover{
-    color: $hover-blue;
+    color: $sec-hover;
 }

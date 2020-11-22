@@ -1,8 +1,12 @@
-$light: #cdcdcd;
+$prime: #16264b;
+$secondary: #0e87a7;
+$sec-hover: #09c1de;
+$third-bright: #346E6E;
+$third: #0E4343;
 
 .container{
     height: 100vh;
     width: 100vw;
-    background:$light;
+    background:$third;
     display: flex;
 }
