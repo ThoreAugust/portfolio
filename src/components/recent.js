@@ -11,7 +11,7 @@ const Recent = () =>{
                     <h3>Good News App</h3>
                     <iframe
                         src="https://appetize.io/embed/n0nnx7qmcvqhp776ug0bqp1310?device=pixel4xl&scale=75&orientation=portrait&osVersion=10.0&deviceColor=black"
-                        width="600px" height="840" frameborder="0" scrolling="no" title="Good News App - made with ReactNative"/>
+                        width="600px" height="840" frameBorder="0" scrolling="no" title="Good News App - made with ReactNative"/>
                         <p>The free-Tier of Appetize.io just allows one user a time. <br/>If you experience issues please let me know.</p>
                         <a className={recentStyle.moreInfo} href="/">More Information on this Project</a>
                 </div>
