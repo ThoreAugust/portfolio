@@ -6,9 +6,55 @@ $third: #0E4343;
 $transparent-blue: rgba(9,193,222,0.25);
 
 .container{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background:$secondary;
     background: linear-gradient(45deg, $secondary 0%, $prime 88%);
     display: flex;
+    padding: 0 7.5rem;
+    color: white;
+    div{
+        width: 50%;
+        height: 100%;
+        padding: 8rem;
+        div{
+            width: 75%;
+            padding: 1.5rem 0 1.5rem 2rem;
+            background-color: $transparent-blue;
+            h2{
+                text-transform: uppercase;
+            }
+            .stack{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                background: none;
+                margin-left: -2rem;
+                img{
+                    height: 3rem;
+                    width: auto;
+                    margin: 1rem 2.5rem 1rem;
+                }
+            }
+            ul{
+                padding-left: 1rem;
+                li p{
+                    padding-left: 1rem;
+                }
+                
+            }
+            &:first-child{
+                margin-bottom: 5rem;
+            }
+            &.hobbies{
+                padding-bottom: 2.5rem;
+            }
+        }
+        
+    }
+    .right{
+        padding-left: 1rem;
+    }
 }
