@@ -1,5 +1,5 @@
 import React from 'react';
-import me from '../../static/200902_Thore_portrait.png'
+import me from '../../static/200902_Thore_portrait.webp'
 import welcomeStyle from './welcome.module.scss'
 
 const Welcome = () =>{
