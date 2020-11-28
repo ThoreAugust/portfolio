@@ -9,9 +9,13 @@ const Recent = () =>{
             <div className={recentStyle.projectContainer}>
                 <div className={recentStyle.project}>
                     <h3>Good News App</h3>
-                    <iframe
-                        src="https://appetize.io/embed/n0nnx7qmcvqhp776ug0bqp1310?device=pixel4xl&scale=75&orientation=portrait&osVersion=10.0&deviceColor=black"
-                        width="600px" height="840" frameBorder="0" scrolling="no" title="Good News App - made with ReactNative"/>
+                        <a href="https://appetize.io/app/n0nnx7qmcvqhp776ug0bqp1310?device=pixel4xl&scale=75&orientation=portrait&osVersion=10.0&deviceColor=black">
+                            <img 
+                            src="https://appetize.io/images/pixel4xl_black.png" 
+                            alt="Good News App- made with ReactNative" 
+                            style={{height:"700px", marginLeft:"-5%", width:"auto"}}
+                            />
+                        </a>
                         <p>The free-Tier of Appetize.io just allows one user a time. <br/>If you experience issues please let me know.</p>
                         <a className={recentStyle.moreInfo} href="/">More Information on this Project</a>
                 </div>
