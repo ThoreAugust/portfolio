@@ -1,5 +1,6 @@
 import React from 'react';
 import recentStyle from './recent.module.scss';
+import GNA from '../../static/GNA.webp'
 
 const Recent = () =>{
     return(
@@ -11,7 +12,7 @@ const Recent = () =>{
                     <h3>Good News App</h3>
                         <a href="https://appetize.io/app/n0nnx7qmcvqhp776ug0bqp1310?device=pixel4xl&scale=75&orientation=portrait&osVersion=10.0&deviceColor=black">
                             <img 
-                            src="https://appetize.io/images/pixel4xl_black.png" 
+                            src={GNA} 
                             alt="Good News App- made with ReactNative" 
                             style={{height:"700px", marginLeft:"-5%", width:"auto"}}
                             />
